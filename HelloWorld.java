@@ -191,7 +191,7 @@ public class HelloWorld
 					System.out.println("This is rock paper scissors, so type rock paper or scissors to play your move.");
 					String p1 = jin.nextLine();
 					String p2 = "rock";
-					Integer optionNum = new Random().nextInt(2) + 1;
+					Integer optionNum = new Random().nextInt(3) + 1;
 					if(optionNum.equals(1))
 					{
 						p2 = "rock";
@@ -200,11 +200,12 @@ public class HelloWorld
 					{
 						p2 = "paper";
 					}
-					else if(optionNum.equals(2))
+					else if(optionNum.equals(3))
 					{
 						p2 = "scissors";
 					}
 					c = false;
+					System.out.println("Bot throws: " + p2);
 					if(p1.equals("rock"))
 					{
 						//System.out.println("first if");
